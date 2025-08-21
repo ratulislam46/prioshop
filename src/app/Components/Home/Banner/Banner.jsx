@@ -9,7 +9,7 @@ const Banner = () => {
                     className="absolute inset-0 object-cover w-full h-full"
                     alt="banner image"
                 />
-                  <div className="absolute inset-0 bg-black/20" />
+                  <div className="absolute inset-0 bg-black/40" />
                 <div className="relative bg-opacity-75 bg-deep-purple-accent-700">
                     <div className="relative px-4 py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
                         <div className="flex flex-col items-center justify-between xl:flex-row">
