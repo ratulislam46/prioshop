@@ -7,6 +7,7 @@ import Piyaj from '@/public/assets/piyaj.jpg'
 import Puishak from '@/public/assets/puishak.jpg'
 import Roson from '@/public/assets/roson.jpg'
 import Moris from '@/public/assets/moris.jpg'
+import Begun from '@/public/assets/begun.jpg'
 
 const ProductMarquee = () => {
     return (
@@ -45,6 +46,12 @@ const ProductMarquee = () => {
                 <div className='mr-10'>
                     <Image
                         src={Roson}
+                        height={200} width={200} alt='product'>
+                    </Image>
+                </div>
+                <div className='mr-10'>
+                    <Image
+                        src={Begun}
                         height={200} width={200} alt='product'>
                     </Image>
                 </div>
