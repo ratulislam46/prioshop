@@ -12,51 +12,54 @@ import Begun from '@/public/assets/begun.jpg'
 const ProductMarquee = () => {
     return (
         <div>
-            <Marquee>
-                <div className='mr-10'>
-                    <Image
-                        src={Tomato}
-                        height={200} width={200} alt='product'>
-                    </Image>
-                </div>
-                <div className='mr-10'>
-                    <Image
-                        src={Fullcopy}
-                        height={200} width={200} alt='product'>
-                    </Image>
-                </div>
-                <div className='mr-10'>
-                    <Image
-                        src={Piyaj}
-                        height={200} width={200} alt='product'>
-                    </Image>
-                </div>
-                <div className='mr-10'>
-                    <Image
-                        src={Puishak}
-                        height={200} width={200} alt='product'>
-                    </Image>
-                </div>
-                <div className='mr-10'>
-                    <Image
-                        src={Moris}
-                        height={200} width={200} alt='product'>
-                    </Image>
-                </div>
-                <div className='mr-10'>
-                    <Image
-                        src={Roson}
-                        height={200} width={200} alt='product'>
-                    </Image>
-                </div>
-                <div className='mr-10'>
-                    <Image
-                        src={Begun}
-                        height={200} width={200} alt='product'>
-                    </Image>
-                </div>
+             <h1 className='text-4xl lg:text-5xl font-semibold mb-12'>Best Selling Products</h1>
+            <div>
+                <Marquee>
+                    <div className='mr-10'>
+                        <Image
+                            src={Tomato}
+                            height={200} width={200} alt='product'>
+                        </Image>
+                    </div>
+                    <div className='mr-10'>
+                        <Image
+                            src={Fullcopy}
+                            height={200} width={200} alt='product'>
+                        </Image>
+                    </div>
+                    <div className='mr-10'>
+                        <Image
+                            src={Piyaj}
+                            height={200} width={200} alt='product'>
+                        </Image>
+                    </div>
+                    <div className='mr-10'>
+                        <Image
+                            src={Puishak}
+                            height={200} width={200} alt='product'>
+                        </Image>
+                    </div>
+                    <div className='mr-10'>
+                        <Image
+                            src={Moris}
+                            height={200} width={200} alt='product'>
+                        </Image>
+                    </div>
+                    <div className='mr-10'>
+                        <Image
+                            src={Roson}
+                            height={200} width={200} alt='product'>
+                        </Image>
+                    </div>
+                    <div className='mr-10'>
+                        <Image
+                            src={Begun}
+                            height={200} width={200} alt='product'>
+                        </Image>
+                    </div>
 
-            </Marquee>
+                </Marquee>
+            </div>
         </div>
     );
 };

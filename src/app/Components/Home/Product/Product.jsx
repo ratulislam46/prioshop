@@ -1,9 +1,24 @@
+
+import ProductCard from '@/src/app/products/components/ProductCard';
 import React from 'react';
 
-const Product = () => {
+const getPost = async () => {
+    const res = await fetch('http://localhost:3000/api/items');
+    const data = await res.json();
+    return data;
+}
+
+const Product = async () => {
+    const allProducts = await getPost();
+
     return (
-        <div>
-            <h1 className="text-7xl text-center text-black">Product</h1>
+        <div className='container mx-auto'>
+            <h1 className='text-4xl lg:text-5xl font-semibold mb-12'>Product Features</h1>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {allProducts.map((product) => (
+                    <ProductCard key={product._id} product={product}></ProductCard>
+                ))}
+            </div>
         </div>
     );
 };
