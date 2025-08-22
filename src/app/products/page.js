@@ -2,7 +2,7 @@ import React from 'react';
 import ProductCard from './components/ProductCard';
 
 const getPost = async () => {
-    const res = await fetch('http://localhost:3000/api/items');
+    const res = await fetch(`${process.env.NEXTAUTH_URL}/api/items`);
 
     if (!res.ok) {
         console.error("Failed to fetch products:", res.status, await res.text());

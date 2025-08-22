@@ -3,7 +3,7 @@ import React from 'react';
 
 
 const getSingleProduct = async (product_id) => {
-    const res = fetch(`http://localhost:3000/api/items/${product_id}`);
+    const res = fetch(`${process.env.NEXTAUTH_URL}/api/items/${product_id}`);
     const data = (await res).json();
     return data;
 }
