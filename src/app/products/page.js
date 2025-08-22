@@ -3,6 +3,12 @@ import ProductCard from './components/ProductCard';
 
 const getPost = async () => {
     const res = await fetch('http://localhost:3000/api/items');
+
+    if (!res.ok) {
+        console.error("Failed to fetch products:", res.status, await res.text());
+        return [];
+    }
+
     const data = await res.json();
     return data;
 }

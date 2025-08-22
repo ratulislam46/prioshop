@@ -26,7 +26,7 @@ const ProductCard = ({ product }) => {
             </div>
 
             {/* Button Section */}
-            <Link href={`product/${product._id}`} className="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md">
+            <Link href={`products/${product._id}`} className="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md">
                 Details
             </Link>
         </div>

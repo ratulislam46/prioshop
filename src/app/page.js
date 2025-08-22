@@ -12,7 +12,7 @@ export default function Home() {
       <section className="container mx-auto">
         <ProductMarquee />
       </section>
-      <section className="container mx-auto mb-20">
+      <section className="container mx-auto pb-20">
         <Product />
       </section>
     </div>
