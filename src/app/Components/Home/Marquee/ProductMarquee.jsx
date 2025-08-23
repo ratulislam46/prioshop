@@ -9,6 +9,8 @@ import Roson from '@/public/assets/roson.jpg'
 import Moris from '@/public/assets/moris.jpg'
 import Begun from '@/public/assets/begun.jpg'
 
+export const dynamic = "force-dynamic";
+
 const ProductMarquee = () => {
     return (
         <div>

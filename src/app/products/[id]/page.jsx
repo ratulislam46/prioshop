@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
+export const dynamic = "force-dynamic";
 
 const getSingleProduct = async (product_id) => {
     const res = fetch(`http://localhost:3000/api/items/${product_id}`);
