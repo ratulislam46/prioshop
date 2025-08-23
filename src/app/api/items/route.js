@@ -3,7 +3,7 @@ import { DBConnect } from "@/src/lib/DBConnect";
 export async function GET() {
 
     const data = await DBConnect("products").find().toArray()
-
+    console.log(data);
     return Response.json(data)
 }
 
