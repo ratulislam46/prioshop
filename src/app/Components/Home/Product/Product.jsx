@@ -5,7 +5,7 @@ import React from 'react';
 export const dynamic = "force-dynamic";
 
 const getPost = async () => {
-    const res = await fetch('http://localhost:3000/api/items');
+    const res = await fetch(`${process.env.NEXT_BASE_URL}/api/items`);
     const data = await res.json();
     return data;
 }

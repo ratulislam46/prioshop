@@ -5,7 +5,7 @@ import ProductCard from './components/ProductCard';
 export const dynamic = "force-dynamic";
 
 const getPost = async () => {
-    const res = await fetch('http://localhost:3000/api/items');
+    const res = await fetch(`${process.env.NEXT_BASE_URL}/api/items`);
 
     if (!res.ok) {
         console.error("Failed to fetch products:", res.status, await res.text());

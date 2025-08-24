@@ -4,15 +4,14 @@ import React from 'react';
 export const dynamic = "force-dynamic";
 
 const getSingleProduct = async (product_id) => {
-    const res = fetch(`http://localhost:3000/api/items/${product_id}`);
-    const data = (await res).json();
+    const res = await fetch(`${process.env.NEXT_BASE_URL}/api/items/${product_id}`);
+    const data = await res.json();
     return data;
 }
 
 const ProductDetails = async ({ params }) => {
     const id = await params;
     const singleProduct = await getSingleProduct(id.id);
-    // console.log(singleProduct);
 
     const { title, description, price, product_owner, quantity, image } = singleProduct
 
