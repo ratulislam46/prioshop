@@ -17,7 +17,7 @@ const AddProduct = () => {
         <div className='container mx-auto'>
             <section className='flex justify-center items-center'>
                 <form onSubmit={handleAddProduct}
-                    className='p-4 border border-gray-300 rounded-xl my-24 shadow-xl hover:shadow-2xl'
+                    className='p-8 lg:p-10 border border-gray-300 rounded-xl my-24 shadow-xl hover:shadow-2xl'
                 >
                     <legend className="fieldset-legend text-black ">What is your product name?</legend>
                     <input type="text" name='name' className="input bg-white" placeholder="Product Name" required />

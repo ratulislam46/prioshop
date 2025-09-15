@@ -1,3 +1,4 @@
+import LoginButton from '@/src/components/LoginButton'
 import Link from 'next/link'
 import React from 'react'
 
@@ -23,15 +24,17 @@ export const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <Link href='/' className="text-xl font-bold">Prio-Shop</Link>
+        <Link href='/' className="text-2xl font-bold text-orange-500">Prio-Shop</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           {navLinks}
         </ul>
       </div>
+
+      {/* Login/Logout Button  */}
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <LoginButton />
       </div>
     </div>
   )
